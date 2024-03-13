@@ -12,8 +12,13 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
-img-responsive {
+.img-responsive {
   max-width: 100%;
+  display: block;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .grid {
   display: grid;
@@ -109,11 +114,17 @@ section.secondary {
   background-color: white;
   margin: 30px 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-main {
   padding: 30px;
 }
 .card-footer {
   padding: 0 30px 30px;
+}
+.instagram-embeds {
+  margin: 30px 0;
 }
 main h4 {
   font-weight: 700;
@@ -193,5 +204,11 @@ footer a {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
